@@ -1,0 +1,19 @@
+*[class*="see-"] {position: relative;}
+
+.description {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%,50%);
+	z-index: +1;
+	background-color: var(--shadow8);
+	border-radius: 4px;
+	transition: all .4s;
+	overflow: hidden;
+	min-width: 120%;
+	max-height: 0;
+	color: white;
+	font-size: 2rem;
+	text-align: center;
+	font-family: arimo;
+}

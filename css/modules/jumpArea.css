@@ -1,0 +1,47 @@
+.jumpAreaBox {
+	margin: var(--margin1);
+	padding: 2rem 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 10.6in;
+	position: relative;
+}
+
+.jumpArea {
+	display: grid;
+	grid-gap: 4rem;
+	grid-template-columns: repeat(4,1fr);
+}
+
+*[class*="-area"] {
+	position: relative;
+	width: 2in;
+	height: 2in;
+	background-image: url('../../img/archive_locate_positive.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-color: white;
+	border: solid 4px var(--shadow1);
+	border-radius: 4px;
+	box-shadow: 6px 8px 8px var(--shadow1);
+	transition: all .3s;
+}
+.jumpArea a:nth-child(1) {background-image: url('../../img/icons-area/command.png');}
+.jumpArea a:nth-child(2) {background-image: url('../../img/icons-area/redstone.png');}
+.jumpArea a:nth-child(3) {background-image: url('../../img/icons-area/construction.png');}
+.jumpArea a:nth-child(4) {background-image: url('../../img/icons-area/decoration.png');}
+.jumpArea a:nth-child(7) {background-image: url('../../img/icons-area/adventura-maps.png');}
+
+*[class*="-area"]:hover {
+	border-color: #FF007E;
+	box-shadow: 6px 8px 4px var(--shadow2);
+	background-image: url('../../img/archive_locate_negative.png');
+}
+
+*[class*="-area"]:hover > .description {
+	padding: .4rem 1rem;
+	border-bottom: solid 4px #34CEFA;
+	max-height: 100%;
+}

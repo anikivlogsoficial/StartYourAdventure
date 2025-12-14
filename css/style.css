@@ -1,0 +1,55 @@
+@import url('modules/scroll.css');
+@import url('modules/header&footer.css');
+@import url('modules/banner.css');
+@import url('modules/info.css');
+@import url('modules/seeDescription.css');
+@import url('modules/jumpArea.css');
+/*-------------------------------------------------------------*/
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-transform: none;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+/*-------------------------------------------------------------*/
+body {
+	background-size: 6rem;
+	background-image: url('../img/bg-01.png');
+}
+/*-------------------------------------------------------------*/
+:root {
+	--margin1: .6in auto;
+	--shadow1:rgba(0,0,0,.1);
+	--shadow2:rgba(0,0,0,.2);
+	--shadow4:rgba(0,0,0,.4);
+	--shadow8:rgba(0,0,0,.8);
+}
+/*-------------------------------------------------------------*/
+@media only screen and (max-width: 520px) {
+	.jumpArea {
+		grid-template-columns: repeat(1,1fr);
+	}
+	footer {
+		grid-template-columns: 1fr;
+	}
+}
+@media only screen and (min-width: 520px) and (max-width: 740px) {
+	.jumpArea {
+		grid-template-columns: repeat(2,1fr);
+	}
+}
+@media only screen and (min-width: 740px) and (max-width: 1000px) {
+	.jumpArea {
+		grid-template-columns: repeat(3,1fr);
+	}
+}
+/*-------------------------------------------------------------*/
+/*.banner::before {animation: anit01 8s linear infinite;}
+@keyframes anit01 {to{background-position: 100vw;}}
+header {animation: anit02 128s linear infinite;}
+@keyframes anit02 {to{background-position: 100vh;}}
+@keyframes Animation002A {50%{transform: scale(1.2);}}*/
+/*-------------------------------------------------------------*/
+/*-------------------------------------------------------------*/
