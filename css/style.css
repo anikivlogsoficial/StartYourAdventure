@@ -1,17 +1,20 @@
 @import url('modules/scroll.css');
-@import url('modules/header&footer.css');
+@import url('modules/header-footer.css');
 @import url('modules/banner.css');
 @import url('modules/info.css');
 @import url('modules/seeDescription.css');
 @import url('modules/jumpArea.css');
 /*-------------------------------------------------------------*/
-* {
+*,
+*::before,
+*::after {
 	margin: 0;
 	padding: 0;
 	list-style: none;
 	text-transform: none;
 	text-decoration: none;
 	box-sizing: border-box;
+	user-select: none;
 }
 /*-------------------------------------------------------------*/
 body {
@@ -28,6 +31,12 @@ body {
 }
 /*-------------------------------------------------------------*/
 @media only screen and (max-width: 520px) {
+	.infoBox {
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	@keyframes infobox01 { 50% { transform: translateX(-50%) scale(1.1); } }
+	@keyframes infobox02 { 100% { transform: translateX(-220%); } }
 	.jumpArea {
 		grid-template-columns: repeat(1,1fr);
 	}
@@ -36,6 +45,12 @@ body {
 	}
 }
 @media only screen and (min-width: 520px) and (max-width: 740px) {
+	.infoBox {
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	@keyframes infobox01 { 50% { transform: translateX(-50%) scale(1.1); } }
+	@keyframes infobox02 { 100% { transform: translateX(-220%); } }
 	.jumpArea {
 		grid-template-columns: repeat(2,1fr);
 	}

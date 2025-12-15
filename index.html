@@ -1,44 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>● Lobby // Aniki Vlogs //</title>
-		<link rel="shortcut icon" href="img/archi-locate-positive.png" type="image/x-icon">
-		<link rel="stylesheet" href="css/style.css">
-		<script src="js/main.js"></script>
-	</head>
-	<body>
-		<!--| HEADER |-->
-		<header>
-			<h1>Aniki Vlogs</h1>
-		</header>
-		<!--| BANNER |-->
-		<section class="banner">
-			<h2>¡Bienvenidos!</h2>
-		</section>
-		<!--| INFO |-->
-		<section class="infoBox"><h3>Información</h3><p>¡Feliz 14 de febrero!</p><a id="closetWindow">Cerrar</a>
-		</section>
-		<!--| JUMP AREA |-->
-		<section class="jumpAreaBox">
-			<div class="jumpArea">
-				<!-- <a class="see-area" href=""><p class="description">Ascensor beta</p></a> -->
-				<!-- <a class="see-area" href=""><p class="description">bleeding</p></a> -->
-				<!-- <a class="see-area" href=""><p class="description">Their names</p></a> -->
-				<!-- <a class="see-area" href=""><p class="description">InfoCraft</p></a> -->
-				<a class="see-area" href=""><p class="description">Comandos</p></a>
-				<a class="see-area" href=""><p class="description">Redstone</p></a>
-				<a class="see-area" href=""><p class="description">Construcción</p></a>
-				<a class="see-area" href=""><p class="description">Decoración</p></a>
-				<a class="see-area" href=""><p class="description">Data packs</p></a>
-				<a class="see-area" href=""><p class="description">Resource packs</p></a>
-				<a class="see-area" href=""><p class="description">Mapas de aventuras</p></a>
-			</div>
-		</section>
-		<footer>
-			<h6>AV-Studios</h6>
-			<b>© Copyright - 2021</b>
-		</footer>
-	</body>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>● Lobby // Aniki Vlogs //</title>
+	<link rel="shortcut icon" href="./img/archi-locate-positive.png" type="image/x-icon">
+	<link rel="stylesheet" href="./css/style.css">
+	<script src="./js/main.js" defer></script>
+</head>
+
+<body>
+	<!--| HEADER |-->
+	<header>
+		<h1>Aniki Vlogs</h1>
+	</header>
+	<!--| BANNER |-->
+	<section class="banner">
+		<h2>¡Bienvenidos!</h2>
+	</section>
+	<!--| INFO |-->
+	<section class="infoBox">
+		<span class="title">INFORMACIÓN</span>
+		<p class="subtitle">Página Web Legacy (2021)</p>
+		<p class="text">Se estará retomando el desarrollo del sitio web<br>durante el periodo 2025-2026.</p>
+		<a id="closetWindow">Cerrar</a>
+	</section>
+	<!--| JUMP AREA |-->
+	<section class="jumpAreaBox">
+		<h1 class="title-web">Áreas Del Canal</h1>
+		<div class="jumpArea">
+			<!-- <a class="see-area" href="#" target="_blank">
+					<img src="./img/infocraft/pack.png" alt="" onerror="this.onerror=null;this.src = './img/arc-locate-negative.png';">
+					<p class="description">InfoCraft</p>
+				</a> -->
+			<a class="see-area" href="#">
+				<img src="./img/icons-area/command.png" alt=""
+					onerror="this.onerror=null;this.src = './img/arc-locate-negative.png';">
+				<span class="description">Comandos</span>
+			</a>
+			<a class="see-area" href="#">
+				<img src="./img/icons-area/redstone.png" alt=""
+					onerror="this.onerror=null;this.src = './img/arc-locate-negative.png';">
+				<span class="description">Redstone</span>
+			</a>
+			<a class="see-area" href="#">
+				<img src="./img/icons-area/construction.png" alt=""
+					onerror="this.onerror=null;this.src = './img/arc-locate-negative.png';">
+				<span class="description">Construcción</span>
+			</a>
+			<a class="see-area" href="#">
+				<img src="./img/icons-area/decoration.png" alt=""
+					onerror="this.onerror=null;this.src = './img/arc-locate-negative.png';">
+				<span class="description">Decoración</span>
+			</a>
+			<a class="see-area" href="#links-datapacks">
+				<img src="./img/icons-area/datapacks.png" alt=""
+					onerror="this.onerror=null;this.src = './img/arc-locate-negative.png';">
+				<span class="description">Data packs</span>
+			</a>
+			<a class="see-area" href="#links-resourcepacks">
+				<img src="./img/icons-area/resourcepacks.png" alt=""
+					onerror="this.onerror=null;this.src = './img/arc-locate-negative.png';">
+				<span class="description">Resource packs</span>
+			</a>
+			<a class="see-area" href="#">
+				<img src="./img/icons-area/adventura-maps.png" alt=""
+					onerror="this.onerror=null;this.src = './img/arc-locate-negative.png';">
+				<span class="description">Mapas de aventuras</span>
+			</a>
+		</div>
+		<h1 class="title-web" id="links-datapacks">Descargas Directas<br>Data Packs</h1>
+		<div class="jumpArea">
+			<a class="see-area" href="#">
+				<img src="./img/datapacks/ascesorbeta-pack.png" alt=""
+					onerror="this.onerror=null;this.src = './img/arc-locate-negative.png';">
+				<p class="description">Ascensor Beta</p>
+			</a>
+			<a class="see-area" href="#">
+				<img src="./img/datapacks/bleeding-pack.png" alt=""
+					onerror="this.onerror=null;this.src = './img/arc-locate-negative.png';">
+				<p class="description">Bleeding</p>
+			</a>
+			<a class="see-area" href="#">
+				<img src="./img/datapacks/theirnames-pack.png" alt=""
+					onerror="this.onerror=null;this.src = './img/arc-locate-negative.png';">
+				<p class="description">Their Names</p>
+			</a>
+			<a class="see-area" href="https://github.com/anikivlogsoficial/BestFriends/releases" target="_blank">
+				<img src="./img/datapacks/bestfriends-pack.png" alt=""
+					onerror="this.onerror=null;this.src = './img/arc-locate-negative.png';">
+				<p class="description">Best Friends</p>
+			</a>
+			<a class="see-area" href="#">
+				<img src="./img/datapacks/devtools-pack.png" alt=""
+					onerror="this.onerror=null;this.src = './img/arc-locate-negative.png';">
+				<p class="description">DevTools</p>
+			</a>
+			<a class="see-area" href="#">
+				<img src="./img/datapacks/devutils-pack.png" alt=""
+					onerror="this.onerror=null;this.src = './img/arc-locate-negative.png';">
+				<p class="description">DevUtils</p>
+			</a>
+		</div>
+		<h1 class="title-web" id="links-resourcepacks">Descargas Directas<br>Resource Packs</h1>
+		<div class="jumpArea">
+			<a class="see-area" href="https://github.com/anikivlogsoficial/AtaliaSL/releases" target="_blank">
+				<img src="./img/resourcepacks/ataliasl-pack.png" alt=""
+					onerror="this.onerror=null;this.src = './img/arc-locate-negative.png';">
+				<p class="description">Atalia SL</p>
+			</a>
+		</div>
+	</section>
+	<!--| FOOTER |-->
+	<footer>
+		<div class="explore-platforms">
+			<h1 class="title">Vísitame en Plataformas</h1>
+			<ul>
+				<li>
+					<a class="socialmedia" href="https://youtube.com/@AnikiVlogsOficial" target="_blank">
+						YouTube
+					</a>
+				</li>
+				<li>
+					<a class="socialmedia" href="https://odysee.com/@AnikiVlogsOficial" target="_blank">
+						Odysee
+					</a>
+				</li>
+				<li>
+					<a class="socialmedia" href="https://www.tiktok.com/@anikivlogsoficial" target="_blank">
+						TikTok
+					</a>
+				</li>
+				<li>
+					<a class="socialmedia" href="https://www.instagram.com/anikivlogsoficial" target="_blank">
+						Instagram
+					</a>
+				</li>
+				<li>
+					<a class="socialmedia" href="https://kick.com/anikivlogsoficial" target="_blank">
+						Kick
+					</a>
+				</li>
+				<li>
+					<a class="socialmedia" href="https://github.com/anikivlogsoficial" target="_blank">
+						GitHub
+					</a>
+				</li>
+			</ul>
+		</div>
+		<p>AV-Studios</p>
+		<p>© Copyright - 2021</p>
+	</footer>
+</body>
+
 </html>

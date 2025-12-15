@@ -28,9 +28,9 @@
 
 .banner h2 {
 	color: white;
-	text-shadow: .4vw .4vw var(--shadow2);
+	text-shadow: 0.5vmin 0.5vmin var(--shadow2);
 	font-size: 9vw;
-	font-family: abel;
+	font-family: arial;
 	letter-spacing: 2px;
 	z-index: +1;
 }

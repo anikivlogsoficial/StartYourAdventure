@@ -1,7 +1,10 @@
-window.onload=function() {
-	document.querySelectorAll('#closetWindow').forEach(Aa => {
-		Aa.addEventListener('click', function() {
-			Aa.parentElement.style.display='none';
+window.onload = function () {
+	document.querySelectorAll('#closetWindow').forEach(popupClassic => {
+		popupClassic.addEventListener('click', function () {
+			popupClassic.parentElement.classList.toggle('remove');
+			setTimeout(() => {
+				popupClassic.parentElement.style.display = 'none';
+			}, 1000)
 		})
 	});
-}
+};
